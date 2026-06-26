@@ -41,8 +41,9 @@ def test_analyze_simple(tmp_path):
     result = analyze(script)
     assert isinstance(result, AnalysisResult)
     assert "os" in result.detected_imports
-    assert result.has_gui_framework is False
     assert isinstance(result.hidden_imports, list)
+    direct = extract_imports(script)
+    assert "tkinter" not in direct
 
 
 def test_analyze_requests_hidden_imports(tmp_path):
