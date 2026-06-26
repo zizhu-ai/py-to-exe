@@ -10,15 +10,17 @@
 ## Table of Contents
 
 - [Why py-to-exe?](#why-py-to-exe)
-- [Quick Start](#quick-start)
+- [Features](#features)
 - [Installation](#installation)
+- [Quick Start](#quick-start)
 - [Usage](#usage)
 - [Interactive Mode](#interactive-mode)
 - [How It Works](#how-it-works)
-- [Comparison](#comparison)
+- [Comparison: py-to-exe vs PyInstaller vs auto-py-to-exe](#comparison)
 - [FAQ](#faq)
 - [Troubleshooting](#troubleshooting)
 - [Limitations](#limitations)
+- [Contributing](#contributing)
 
 ## Why py-to-exe?
 
@@ -37,6 +39,8 @@ py-to-exe your_script.py
 ```
 
 That's it. Your executable is in `./dist/`.
+
+![py-to-exe demo: convert Python script to standalone executable with one command](assets/py-to-exe-convert-python-to-exe-demo.gif)
 
 ## Features
 
@@ -251,12 +255,14 @@ Large packages (numpy, pandas, torch) increase build time. First builds are slow
 
 ## Contributing
 
-Contributions welcome! Areas that need help:
+Contributions welcome! See the [contributing guide](CONTRIBUTING.md) for setup instructions.
 
-- Adding more packages to the hidden imports database
+Areas that need help:
+
+- Adding more packages to the [hidden imports database](src/py_to_exe/known_imports.py)
 - Testing on Windows and Linux
-- Error pattern coverage
+- Expanding [error pattern coverage](src/py_to_exe/errors.py)
 
 ## License
 
-MIT
+[MIT](LICENSE)

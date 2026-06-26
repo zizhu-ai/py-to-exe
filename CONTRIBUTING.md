@@ -1,5 +1,7 @@
 # Contributing to py-to-exe
 
+Thanks for your interest in contributing! See the [project README](README.md) for an overview of what py-to-exe does.
+
 ## Setup
 
 ```bash
