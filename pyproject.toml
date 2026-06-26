@@ -41,9 +41,9 @@ dev = ["pytest", "ruff"]
 py-to-exe = "py_to_exe.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/perklet/py-to-exe"
-Repository = "https://github.com/perklet/py-to-exe"
-Issues = "https://github.com/perklet/py-to-exe/issues"
+Homepage = "https://github.com/zizhu-ai/py-to-exe"
+Repository = "https://github.com/zizhu-ai/py-to-exe"
+Issues = "https://github.com/zizhu-ai/py-to-exe/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/py_to_exe"]
