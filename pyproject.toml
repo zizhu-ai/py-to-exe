@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "py-to-exe"
+name = "smart-py-to-exe"
 version = "0.1.0"
 description = "Convert Python scripts to standalone executables. One command. Zero config."
 readme = "README.md"

@@ -2,8 +2,8 @@
 
 > Convert Python scripts to standalone executables with one command. Zero config.
 
-[![PyPI version](https://img.shields.io/pypi/v/py-to-exe)](https://pypi.org/project/py-to-exe/)
-[![Python 3.10+](https://img.shields.io/pypi/pyversions/py-to-exe)](https://pypi.org/project/py-to-exe/)
+[![PyPI version](https://img.shields.io/pypi/v/smart-py-to-exe)](https://pypi.org/project/smart-py-to-exe/)
+[![Python 3.10+](https://img.shields.io/pypi/pyversions/smart-py-to-exe)](https://pypi.org/project/smart-py-to-exe/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Why py-to-exe?
@@ -18,7 +18,7 @@ Existing tools like PyInstaller are powerful but painful:
 **py-to-exe** wraps PyInstaller with smart defaults and automatic fixes:
 
 ```bash
-pip install py-to-exe[pyinstaller]
+pip install smart-py-to-exe[pyinstaller]
 py-to-exe your_script.py
 ```
 
@@ -36,7 +36,7 @@ That's it. Your executable is in `./dist/`.
 ## Installation
 
 ```bash
-pip install py-to-exe[pyinstaller]
+pip install smart-py-to-exe[pyinstaller]
 ```
 
 Requires Python 3.10 or newer.
@@ -132,7 +132,7 @@ py-to-exe doctor app.py
 Install py-to-exe and run one command:
 
 ```bash
-pip install py-to-exe[pyinstaller]
+pip install smart-py-to-exe[pyinstaller]
 py-to-exe your_script.py
 ```
 
@@ -164,7 +164,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install py-to-exe[pyinstaller]
+      - run: pip install smart-py-to-exe[pyinstaller]
       - run: py-to-exe your_script.py
 ```
 
